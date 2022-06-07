@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  body, html,head {
+    height: 100%;
+    margin: 0;
+    font-family: Arial;
+    background-color: coral;
+}
+
+  /* Style tab links */
+  .tablink {
+    background-color: coral;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+    overflow: hidden;
+  }
+  div .col {
+    display: flex;
+  }
+  .tablink:hover {
+    background-color: white;
+  }
+    /* Style the tab content (and add height:100% for full page content) */
+  .tabcontent {
+    color: black;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+  }
+  
+  #Home {background-color: coral;}
+  #Astone {background-color: darksalmon;}
+  #Bstone {background-color: sandybrown;}
+  #Cstone {background-color: orange;}
+
+
+  div .navitem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  

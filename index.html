@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>암석의 세계</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        img:hover {
+            animation: shake 0.5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            10% {
+                transform: translate(-1px, -2px) rotate(-1deg);
+            }
+
+            20% {
+                transform: translate(-3px, 0px) rotate(1deg);
+            }
+
+            30% {
+                transform: translate(3px, 2px) rotate(0deg);
+            }
+
+            40% {
+                transform: translate(1px, -1px) rotate(1deg);
+            }
+
+            50% {
+                transform: translate(-1px, 2px) rotate(-1deg);
+            }
+
+            60% {
+                transform: translate(-3px, 1px) rotate(0deg);
+            }
+
+            70% {
+                transform: translate(3px, 1px) rotate(-1deg);
+            }
+
+            80% {
+                transform: translate(-1px, -1px) rotate(1deg);
+            }
+
+            90% {
+                transform: translate(1px, 2px) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(1px, -2px) rotate(-1deg);
+            }
+        }
+        #image {
+            display: none;
+        }
+        hr {
+        
+            height : 1px;
+            background-color : black;
+            border : 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>암석의 세계</h1>
+    <hr style="background-color: black;"/>
+    <button class="tablink" onclick="openPage('Home', this, 'coral')" id="defaultOpen">Home</button>
+    <button class="tablink" onclick="openPage('Astone', this, 'darksalmon')">Igneous Rock(화성암)</button>
+    <button class="tablink" onclick="openPage('Bstone', this, 'sandybrown')">Metamorphic Rock(변성암)</button>
+    <button class="tablink" onclick="openPage('Cstone', this, 'orange')">Sedimentary Rock(퇴적암)</button>
+
+    <div id="Home" class="tabcontent">
+        <div class="col">
+            <div>
+                <h3>Home</h3>
+                <p>Welcome!</p>
+                <div>
+                    <p>Hover over the image:</p>
+                    <img src="lava.png" alt="lava" width="500" height="500">
+                    <!--이미지 출처:volcano-eruption-and-lava-drawing-vector-32449804.html -->
+                </div>
+            </div>
+            <div>
+                <h4>Description</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="Astone" class="tabcontent">
+        <div class="col">
+            <div>
+                <h3>Igneous Rock</h3>
+                <p>Some news this fine day!</p>
+                <div>
+                    <p>Hover over the image:</p>
+                    
+                    <img src="Rock.jpg" alt="화성암" width="500" height="500">
+                    <!--이미지 출처:https://ko.wikipedia.org/wiki/%ED%99%94%EC%84%B1%EC%95%94 -->
+                </div>
+            </div>
+            <div>
+                <h4>Description</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="Bstone" class="tabcontent">
+        <div class="col">
+            <div>
+                <h3>Metamorphic Rock</h3>
+                <p>Get in touch, or swing by for a cup of coffee.</p>
+                <div>
+                    <p>Hover over the image:</p>
+                    <img src="Rock1.jpg" alt="변성암" width="500" height="500">
+                    <!--이미지 출처:https://kr.freepik.com/premium-photo/folded-metamorphic-rock-background_5638375.html -->
+                </div>
+            </div>
+            <div>
+                <h4>Description</h4>
+            </div>
+        </div>
+    </div>
+    <div id="Cstone" class="tabcontent">
+        <div class="col">
+            <div>
+                <h3>Sedimentary Rock</h3>
+                <p>Who we are and what we do.</p>
+                <div>
+                    <p>Hover over the image:</p>
+                    <img src="Rock2.jpg" alt="퇴적암" width="500" height="500">
+                    <!--이미지 출처:https://ko.wikipedia.org/wiki/%ED%87%B4%EC%A0%81%EC%95%94 -->
+                </div>
+            </div>
+            <div>
+                <h4>Description</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>©Copyright 2050 by nobody. All rights reversed.</p>
+    </footer>
+
+</body>
+
+</html>
+<script src="app.js"></script>
