@@ -43,7 +43,7 @@
   #Cstone {background-color: orange;}
 
 
-  div .navitem {
+  div .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
